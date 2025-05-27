@@ -4,40 +4,36 @@ const Card = () => {
   const services = [
     {
       title: "Web Development",
-      desc: "High-quality websites using modern technologies with responsive design.",
-      icon: "bi-code-slash",
+      desc: "Responsive, scalable and lightning-fast websites.",
+      img: "https://picsum.photos/seed/web/400/200",
     },
     {
       title: "SEO Optimization",
-      desc: "Improve your visibility and ranking on search engines effectively.",
-      icon: "bi-graph-up-arrow",
+      desc: "Rank higher and grow organically with expert SEO.",
+      img: "https://picsum.photos/seed/seo/400/200",
     },
     {
       title: "Cloud Hosting",
-      desc: "Reliable and scalable hosting solutions for your growing business.",
-      icon: "bi-cloud-upload",
+      desc: "Reliable, secure and scalable cloud infrastructure.",
+      img: "https://picsum.photos/seed/cloud/400/200",
     },
   ];
 
   return (
-    <section className="py-5 bg-light">
+    <section className="py-5">
       <div className="container">
-        <div className="text-center mb-5">
-          <h2 className="fw-bold">Our Services</h2>
-          <p className="text-muted">Powerful tools to grow your business</p>
-        </div>
-
+        <h2 className="fw-bold text-center mb-4">Our Services</h2>
         <div className="row g-4">
           {services.map((service, index) => (
             <div className="col-md-4" key={index}>
-              <div className="card h-100 border-0 shadow-sm hover-shadow">
+              <div className="card h-100 shadow-sm border-0">
+                <img
+                  src={service.img}
+                  className="card-img-top"
+                  alt={service.title}
+                />
                 <div className="card-body text-center">
-                  <div className="mb-4">
-                    <i
-                      className={`bi ${service.icon} text-primary display-4`}
-                    ></i>
-                  </div>
-                  <h5 className="card-title fw-semibold">{service.title}</h5>
+                  <h5 className="card-title">{service.title}</h5>
                   <p className="card-text">{service.desc}</p>
                   <a href="#" className="btn btn-outline-primary">
                     Learn More
