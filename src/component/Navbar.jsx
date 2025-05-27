@@ -1,48 +1,28 @@
-import React from "react";
+import React from 'react';
+import { Container, Nav, Navbar as BootstrapNavbar, Button } from 'react-bootstrap';
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
-  <div className="container">
-    <a className="navbar-brand fw-bold text-warning" href="#">BrandName</a>
-
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon"></span>
-    </button>
-
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav ms-auto">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">About</a>
-        </li>
-        <li className="nav-item">
-          <a className="btn btn-warning ms-lg-3" href="#">Sign Up</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    </>
+    <BootstrapNavbar bg="white" expand="lg" className="py-3 shadow-sm">
+      <Container>
+        <BootstrapNavbar.Brand href="#home" className="fw-bold">BRANDNAME</BootstrapNavbar.Brand>
+        <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
+        <BootstrapNavbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto">
+            <Nav.Link href="#home" className="px-3">Home</Nav.Link>
+            <Nav.Link href="#about" className="px-3">About</Nav.Link>
+            <Nav.Link href="#services" className="px-3">Services</Nav.Link>
+            <Nav.Link href="#work" className="px-3">Work</Nav.Link>
+            <Nav.Link href="#contact" className="px-3">Contact Us</Nav.Link>
+          </Nav>
+          <div className="d-flex gap-2">
+            <Button variant="outline-secondary" className="px-4">LOG IN</Button>
+            <Button variant="warning" className="px-4">SIGN UP</Button>
+          </div>
+        </BootstrapNavbar.Collapse>
+      </Container>
+    </BootstrapNavbar>
   );
-};
+}
 
 export default Navbar;
