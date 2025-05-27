@@ -9,7 +9,7 @@ const Carousel = () => {
     >
       <div className="carousel-inner">
 
-        {/* Slide 1 */}
+
         <div className="carousel-item active">
           <img
             src="https://picsum.photos/1920/1000?random=1"
@@ -23,7 +23,7 @@ const Carousel = () => {
           </div>
         </div>
 
-        {/* Slide 2 */}
+
         <div className="carousel-item">
           <img
             src="https://picsum.photos/1920/1000?random=2"
@@ -36,7 +36,7 @@ const Carousel = () => {
           </div>
         </div>
 
-        {/* Slide 3 */}
+
         <div className="carousel-item">
           <img
             src="https://picsum.photos/1920/1000?random=3"
@@ -51,7 +51,7 @@ const Carousel = () => {
 
       </div>
 
-      {/* Carousel controls */}
+   
       <button
         className="carousel-control-prev"
         type="button"

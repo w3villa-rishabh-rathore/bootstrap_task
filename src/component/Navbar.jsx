@@ -5,10 +5,8 @@ const Navbar = () => {
     <>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
   <div className="container">
-    {/* Brand */}
     <a className="navbar-brand fw-bold text-warning" href="#">BrandName</a>
 
-    {/* Toggler for mobile */}
     <button
       className="navbar-toggler"
       type="button"
@@ -21,7 +19,6 @@ const Navbar = () => {
       <span className="navbar-toggler-icon"></span>
     </button>
 
-    {/* Navbar Links */}
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">

@@ -6,6 +6,7 @@ import Accordian from '../component/Accordian'
 import Card from '../component/Card'
 import Carousel from '../component/Carousel'
 import Footer from '../component/Footer'
+import PricingCards from '../component/PricingCards'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
     <Carousel/>
     <Feature/>
     <Card/>
+    <PricingCards/>
     <Accordian/>
     <Footer/>
     </>

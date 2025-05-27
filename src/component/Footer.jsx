@@ -2,95 +2,86 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="bg-primary text-light pt-5 pb-4">
-        <div className="container text-md-left">
-          <div className="row text-md-left">
-    
-            <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 className="text-uppercase mb-4 font-weight-bold text-warning">
-                BrandName
-              </h5>
-              <p>
-                We provide high quality services and solutions for your business
-                using the power of Bootstrap and React.
-              </p>
-            </div>
-
+    <footer className="text-center text-light bg-dark" >
+      <div className="container p-4">
         
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 className="text-uppercase mb-4 font-weight-bold text-warning">
-                Quick Links
-              </h5>
-              <p>
-                <a href="#" className="text-light text-decoration-none">
-                  Home
-                </a>
-              </p>
-              <p>
-                <a href="#" className="text-light text-decoration-none">
-                  Features
-                </a>
-              </p>
-              <p>
-                <a href="#" className="text-light text-decoration-none">
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href="#" className="text-light text-decoration-none">
-                  Contact
-                </a>
-              </p>
-            </div>
+        <section className="mb-4">
+          <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i className="fab fa-google"></i>
+          </a>
+          <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+          <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i className="fab fa-github"></i>
+          </a>
+        </section>
 
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 className="text-uppercase mb-4 font-weight-bold text-warning">
-                Contact
-              </h5>
-              <p>
-                <i className="bi bi-house me-2"></i> New York, NY 10012, US
-              </p>
-              <p>
-                <i className="bi bi-envelope me-2"></i> info@example.com
-              </p>
-              <p>
-                <i className="bi bi-phone me-2"></i> +1 234 567 88
-              </p>
-              <p>
-                <i className="bi bi-printer me-2"></i> +1 234 567 89
-              </p>
+        <section>
+          <form action="">
+            <div className="row d-flex justify-content-center">
+              <div className="col-auto">
+                <p className="pt-2 fw-bold">Sign up for our newsletter</p>
+              </div>
+              <div className="col-md-5 col-12">
+                <div className="form-outline mb-4">
+                  <input type="email" id="form5Example24" className="form-control" />
+                  <label className="form-label text-light" htmlFor="form5Example24">
+                    Email address
+                  </label>
+                </div>
+              </div>
+              <div className="col-auto">
+                <button type="submit" className="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
             </div>
+          </form>
+        </section>
 
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
-              <h5 className="text-uppercase mb-4 font-weight-bold text-warning">
-                Follow us
-              </h5>
-              <a href="#" className="btn btn-outline-light btn-floating m-1">
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a href="#" className="btn btn-outline-light btn-floating m-1">
-                <i className="bi bi-twitter"></i>
-              </a>
-              <a href="#" className="btn btn-outline-light btn-floating m-1">
-                <i className="bi bi-linkedin"></i>
-              </a>
-              <a href="#" className="btn btn-outline-light btn-floating m-1">
-                <i className="bi bi-instagram"></i>
-              </a>
-            </div>
+        <section className="mb-4">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+            eum harum corrupti dicta, aliquam sequi voluptate quas.
+          </p>
+        </section>
+
+        <section>
+          <div className="row">
+            {[1, 2, 3, 4].map((col, i) => (
+              <div className="col-lg-3 col-md-6 mb-4 mb-md-0" key={i}>
+                <h5 className="text-uppercase">Links</h5>
+                <ul className="list-unstyled mb-0">
+                  <li><a className="text-light text-decoration-none" href="#!">Link 1</a></li>
+                  <li><a className="text-light text-decoration-none" href="#!">Link 2</a></li>
+                  <li><a className="text-light text-decoration-none" href="#!">Link 3</a></li>
+                  <li><a className="text-light text-decoration-none" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            ))}
           </div>
+        </section>
+      </div>
 
-          <div className="row mt-3">
-            <div className="col-md-12 text-center">
-              <p className="text-light">
-                &copy; 2025 BrandName. All Rights Reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </>
+  
+      <div className="text-center p-3" style={{ backgroundColor: "#1e1e1e" }}>
+        © 2025 Copyright:{" "}
+        <a className="text-light fw-bold text-decoration-none" href="#">
+          Bootstrap
+        </a>
+      </div>
+    </footer>
   );
 };
 

@@ -7,7 +7,6 @@ const Hero = () => {
   <div className="container">
     <div className="row align-items-center">
       
-      {/* Text Content */}
       <div className="col-lg-6 text-center text-lg-start">
         <h1 className="display-3 fw-bold">Boost Your Business with Bootstrap</h1>
         <p className="lead mt-3">
@@ -19,7 +18,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Image */}
       <div className="col-lg-6 text-center mt-4 mt-lg-0">
         <img
           src="https://picsum.photos/1920/1000?random=4"
