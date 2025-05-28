@@ -1,22 +1,20 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function Hero() {
   return (
-    <section className="py-5 bg-light">
-      <Container>
+    <section className="py-4 py-md-5 bg-light">
+      <Container className="py-4 py-md-5">
         <Row className="align-items-center">
-          <Col lg={6} className="mb-5 mb-lg-0">
-            <h1 className="display-4 fw-bold mb-4">We make your web product awesome.</h1>
-            <p className="lead text-secondary mb-4">We are a bunch of imaginative and experimental souls and we make pretty awesome designs.</p>
-            <Button variant="warning" size="lg" className="rounded-pill px-4">GET STARTED</Button>
+          <Col xs={12} md={6} className="mb-3 mb-md-0 px-2 px-md-5">
+            <h1 className="fw-bold mb-3 mb-md-4 fs- fs-md-1">Welcome to Our Agency</h1>
+            <p className="text-secondary mb-3 mb-md-4 fs-6 fs-md-5">
+              We build digital products that help businesses grow.
+            </p>
+            <a href="#" className="btn btn-warning btn-lg">Get Started</a>
           </Col>
-          <Col lg={6}>
-            <img 
-              src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-              alt="Team collaborating" 
-              className="img-fluid rounded shadow" 
-            />
+          <Col xs={12} md={6}>
+            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Hero" className="img-fluid rounded shadow-sm" />
           </Col>
         </Row>
       </Container>
