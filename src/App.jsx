@@ -21,6 +21,7 @@ function App() {
         imageSrc="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         imagePosition="right"
         portfolioType="Web Design Portfolio"
+        wrap  = "reverse"
       />
       
       <PortfolioSection 
@@ -29,6 +30,7 @@ function App() {
         imageSrc="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         imagePosition="left"
         portfolioType="Web Development Portfolio"
+        wrap  = "normal"
       />
       
       <PortfolioSection 
@@ -37,6 +39,7 @@ function App() {
         imageSrc="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         imagePosition="right"
         portfolioType="Digital Marketing Portfolio"
+        wrap  = "reverse"
       />
       
       <ClientLogos />
